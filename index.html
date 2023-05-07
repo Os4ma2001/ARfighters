@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Fighter</title>
+    <link rel="icon" type="image/x-icon" href="./assect/img/fovicons.png">
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Scss Style Sheet -->
+    <link rel="stylesheet" href="./assect/scss/style.css">
+    <!-- Font Awesome icons Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body class="bg-black">
+    <style>
+         label.icon-label {
+        display: block !important;
+    }
+    </style>
+    <!-- Top Navbar Start -->
+
+    <section class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class="topnavbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <p><i class="fa-solid fa-phone"></i>
+                        <a href="#">1-800-1234-567</a>, <a href="#">1-800-6547-321</a></p>
+                    </div>
+                    <div class="col-lg-5 col-sm-12">
+                        <p><i class="fa-solid fa-location-dot"></i>
+                        <a href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></p>
+                    </div>
+                    <div class="col-lg-2 col-sm-12">
+                        <p><i class="fa-sharp fa-regular fa-envelope"></i>
+                        <a href="#">info@demolink.org</a></p>
+                    </div>
+                    <div class="col-lg-2 col-sm-12">
+                        <p><i class="fa-sharp fa-solid fa-cart-shopping" style="color: #f25f43;"></i>
+                        <a href="#">Shopping Cart:0</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Navbar End -->
+
+    <!-- Logo & Search Start -->
+
+    <section class="d-none d-sm-none d-md-none d-lg-block d-xl-block bg-white">
+        <div class="container-fluid">
+            <div class="row p-2 align-items-center">
+                <div class="col-lg-8 col-sm-6">
+                    <div class="search">
+                        <div class="logo">
+                            <img src="assect/img/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <div class="search-icon d-flex align-items-center justify-content-end">
+                        <div class="logo">
+                            <input type="text"  placeholder="Search">
+                        </div>
+                        <div class="logo">
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo & Search End -->
+
+    <!-- Navbar Start -->
+
+    <section class="d-none d-sm-none d-md-none d-lg-block d-xl-block bg-white" id="nbar">
+        <div class="container">
+            <div class="navber" >
+                <ul class="d-flex align-items-center justify-content-center mt-2 mb-0">
+                    <li><a href="#"><p class="active">HOME</p></a></li>
+                    <div class="dropdown">
+                        <li><a href=""><p>ABOUT <i class="fa fa-caret-down"></i></p></a></li>
+                            <div class="dropdown-content">
+                                <li><a href="#"><p>Overview</a></p> </li>
+                                <li><a href="#"><p>Experience</a></p> </li>
+                                <li><a href="#"><p>FAQ</a></p> </li>
+                                <li><a href="#"><p>Careers</a></p> </li>
+                            </div>
+                    </div> 
+                                <li><a href="#"><p>SCHEDULE</p></a></li>
+                                <li><a href="#"><p>TRAINING</p></a></li>
+                                <li><a href="#"><p>PRICES</p></a></li>
+                    <div class="dropdown">
+                        <li><a href=""><p>EVENTS <i class="fa fa-caret-down"></i></p></a></li>
+                            <div class="dropdown-content">
+                                <li><a href="#"><p>Events</a></p> </li>
+                                <li><a href="#"><p>Singleevent</a></p> </li>
+                            </div>
+                    </div> 
+                    <div class="dropdown">
+                        <li><a href=""><p>BLOG <i class="fa fa-caret-down"></i></p></a></li>
+                            <div class="dropdown-content">
+                                <li><a href="#"><p>Blog</a></p></li>
+                                <li><a href="#"><p>ModernBlog</a></p></li>
+                                <li><a href="#"><p>SinglePost</a></p> </li>
+                            </div>
+                    </div> 
+                    <div class="dropdown">
+                        <li><a href=""><p>PAGE <i class="fa fa-caret-down"></i></p></a></li>
+                            <div class="dropdown-content pages">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12">
+                                       <div class="page">
+                                            <h6>Pages</h6>
+                                            <li><a href="#"><p>About</p></a></li>
+                                            <li><a href="#"><p>Overview</p></a></li>
+                                            <li><a href="#"><p>Experience</p></a></li>
+                                            <li><a href="#"><p>FAQ</p></a></li>
+                                            <li><a href="#"><p>Careers</p></a></li>
+                                            <li><a href="#"><p>Schedule</p></a></li>
+                                            <li><a href="#"><p>Training</p></a></li>
+                                            <li><a href="#"><p>Search Results</p></a></li>
+                                       </div>
+                                       </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                       <div class="page">
+                                            <h6>EXTRAS</h6>
+                                            <li><a href="#"><p>Gallery</p></a></li>
+                                            <li><a href="#"><p>404</p></a></li>
+                                            <li><a href="#"><p>503</p></a></li>
+                                            <li><a href="#"><p>Maintenance</p></a></li>
+                                            <li><a href="#"><p>Coming Soon</p></a></li>
+                                            <li><a href="#"><p>Login</p></a></li>
+                                            <li><a href="#"><p>Register</p></a></li>
+                                            <li><a href="#"><p>Site Map</p></a></li>
+                                            <li><a href="#"><p>Privacy Policy</p></a></li>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                       <div class="page">
+                                            <h6>ELEMENTS</h6>
+                                            <li><a href="#"><p>Typography</p></a></li>
+                                            <li><a href="#"><p>Buttons</p></a></li>
+                                            <li><a href="#"><p>Forms</p></a></li>
+                                            <li><a href="#"><p>Grid</p></a></li>
+                                            <li><a href="#"><p>Tabs</p></a></li>
+                                            <li><a href="#"><p>Progress Bars</p></a></li>
+                                            <li><a href="#"><p>Tables</p></a></li>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <li><a href="#"><p>CONTACT</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar End -->
+
+    <!-- Moblie Navbar Start -->
+
+<section class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="nav d-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <input type="checkbox" id="nav-check">
+        <div class="dis d-flex align-items-center">
+        <div class="nav-header">
+                <div class="nav-title d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                  <img src="./assect/img/logo.png" alt="" width="40%">
+                </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check" class="icon-label">
+            <img src="./assect/img/icon.png" alt="" width="10px" class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+          </label>
+        </div>
+        <div class="nav-bn">
+            <i class="fa-solid fa-bars d-block d-sm-block d-sm-block d-lg-none d-xl-none" onclick="openNav()"></i>
+            
+        </div>
+    </div>
+
+    <div class="nav-links d-block d-sm-block d-md-block d-lg-none d-xl-none">
+          <div class="row m-0">
+            <div class="col-sm-12 d-flex p-1">
+                <div class="icons">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="icons">
+                    <p><a href="#">1-800-1234-567</a>, <a href="">1-800-6547-321</a></p>
+                </div>
+            </div>
+            <div class="col-sm-12 d-flex p-1">
+                <div class="icons">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="icons">
+                    <p><a href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></p>
+                </div>
+            </div>
+            <div class="col-sm-12 d-flex p-1">
+                <div class="icons">
+                    <i class="fa-sharp fa-regular fa-envelope"></i>
+                </div>
+                <div class="icons">
+                    <p class="active"><a href="#">info@demolink.org</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+        <div class="iconss d-flex align-items-center">
+        <div class="input">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        </div><br>
+        <a href="#">HOME</a>
+        <a href="#" class="dropdown-btn">ABOUT 
+            <i class="fa fa-caret-down"></i>
+        </a>
+          <div class="dropdown-container">
+            <a href="#">Overview</a>
+            <a href="#">Experience</a>
+            <a href="#">FAQ</a>
+            <a href="#">Careers</a>
+          </div>
+          <a href="#">SCHEDULE</a>
+          <a href="#">TRAINING</a>
+          <a href="#">PRICES</a>
+          <a href="#" class="dropdown-btn">EVENTS 
+            <i class="fa fa-caret-down"></i>
+        </a>
+          <div class="dropdown-container">
+            <a href="#">Events</a>
+            <a href="#">Singleevent</a>
+          </div>
+          <a href="#" class="dropdown-btn">BLOG 
+            <i class="fa fa-caret-down"></i>
+        </a>
+          <div class="dropdown-container">
+            <a href="#">Blog</a>
+            <a href="#">ModernBlog</a>
+            <a href="#">SinglePost</a>
+          </div>
+          <a href="#" class="dropdown-btn">PAGE 
+            <i class="fa fa-caret-down"></i>
+        </a>
+          <div class="dropdown-container">
+            <h6>Pages</h6>
+            <a href="#">About</a>
+            <a href="#">Overview</a>
+            <a href="#">Experience</a>
+            <a href="#">FAQ</a>
+            <a href="#">Careers</a>
+            <a href="#">Schedule</a>
+            <a href="#">Training</a>
+            <a href="#">Search Results</a>
+            <h6>EXTRAS</h6>
+            <a href="#">Gallery</a>
+            <a href="#">404</a>
+            <a href="#">503</a>
+            <a href="#">Maintenance</a>
+            <a href="#">Coming Soon</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Site Map</a>
+            <a href="#">Privacy Policy</a>
+            <h6>ELEMENTS</h6>
+            <a href="#">Typography</a>
+            <a href="#">Buttons</a>
+            <a href="#">Forms</a>
+            <a href="#">Grid</a>
+            <a href="#">Tabs</a>
+            <a href="#">Progress Bars</a>
+            <a href="#">Tables</a>
+          </div>
+          <a href="#">CONTACTS</a>
+      </div>
+    </section>
+
+      <!-- Moblie Navbar End -->
+
+    <!-- Banner Start  -->
+
+    <section class="bg-img d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class="container formgroup">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-7 col-sm-12">
+                    <div class="banner">
+                        <h3>WELCOME TO OUR CLUB</h3>
+                        <p>Since the opening in 1990, the Boxing Day
+                        Club has become a popular <br> placeamong
+                        boxing & fitness enthusiasts and professionals.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="banner form">
+                        <h3>Register Classes</h3>
+                        <input type="text" placeholder="Your name"><br><br>
+                        <input type="number" placeholder="Phone"><br><br>
+                        <select>
+                            <option value="active">Players</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                        <input type="date" value="2023-05-05" min="2005-01-01" max="2025-12-01" class="input"><br><br>
+                        <button class="button">BOOK YOUR LESSON</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner End -->
+
+    <!-- Moblie Web Banner Start -->
+
+    <section class="hellow bg-img d-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <div class="container formgroup">
+            <div class="row m-0 align-items-center justify-content-center">
+                <div class="col-lg-7 col-sm-12">
+                    <div class="banner">
+                        <h3>WELCOME TO OUR CLUB</h3>
+                        <p class="d-none">Since the opening in 1990, the Boxing Day
+                        Club has become a popular <br> placeamong
+                        boxing & fitness enthusiasts and professionals.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="banner">
+                        <h5>Register Classes</h5>
+                        <div class="form">
+                        <input type="text" placeholder="Your name"><br><br>
+                        <input type="number" placeholder="Phone"><br><br>
+                        <select>
+                            <option value="active">Players</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select><br><br>
+                        <input type="date" value="2023-05-05" min="2005-01-01" max="2025-12-01"><br><br>
+                        <button class="button">BOOK YOUR LESSON</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moblie Web Banner end -->
+
+    <!-- Championship Start -->
+
+    <section class="bg-black py-5 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class="container-fluid  h1">
+            <h1>Past Championship</h1>
+            <div class="row py-5">
+                <div class="col-lg-2">
+                    <div class="championship">
+                        <img src="./assect/img/home-3-03.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="championship">
+                        <h5><a href="#">San Diego Championship</a></h5>
+                        <p><i class="fa-solid fa-calendar-week" style="color: #f25f43;"></i>September 18-21</p>
+                        <p><i class="fa-solid fa-user" style="color: #f25f43;"></i>30 Participants</p>
+                        <p><i class="fa-solid fa-trophy" style="color: #f25f43;"></i>$200,000</p>
+                        <a href="#" class="href">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="championship">
+                        <img src="./assect/img/home-3-04.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="championship">
+                        <h5><a href="#">Southern States Championship</a></h5>
+                        <p><i class="fa-solid fa-calendar-week" style="color: #f25f43;"></i>September 12-15</p>
+                        <p><i class="fa-solid fa-user" style="color: #f25f43;"></i>25 Participants</p>
+                        <p><i class="fa-solid fa-trophy" style="color: #f25f43;"></i>$150,000</p>
+                        <a href="#" class="href">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="championship">
+                        <img src="./assect/img/home-3-05.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="championship">
+                        <h5><a href="#">Open Amateur Championship</a></h5>
+                        <p><i class="fa-solid fa-calendar-week" style="color: #f25f43;"></i>September 18-21</p>
+                        <p><i class="fa-solid fa-user" style="color: #f25f43;"></i>30 Participants</p>
+                        <p><i class="fa-solid fa-trophy" style="color: #f25f43;"></i>$200,000</p>
+                        <a href="#" class="href">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="all">VIEW ALL TOURNAMENTS</a>
+        </div>
+    </section>
+
+    <!-- Championship End -->
+
+    <!-- Moblie Web Championship Start -->
+<br>
+    <section class="d-block d-sm-block d-md-block d-lg-none d-xl-none bg-black p-5 pb-3 text-center">
+        <h6 class="text-center white-color h6">Past Championships</h6><br>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assect/img/home-3-03.jpg" class="d-block w-100" alt="..."><br>
+                        <h5><a href="#">San Diage Championship</a></h5>
+                        <p><i class="fa-solid fa-calendar-week" style="color: #f25f43;"></i>September 18-21</p>
+                        <p><i class="fa-solid fa-user" style="color: #f25f43;"></i>30 Participants</p>
+                        <p><i class="fa-solid fa-trophy" style="color: #f25f43;"></i>$200,000</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assect/img/home-3-04.jpg" class="d-block w-100" alt="..."><br>
+                        <h5><a href="#">Southern States Championship</a></h5>
+                        <p><i class="fa-solid fa-calendar-week" style="color: #f25f43;"></i>September 12-15</p>
+                        <p><i class="fa-solid fa-user" style="color: #f25f43;"></i>25 Participants</p>
+                        <p><i class="fa-solid fa-trophy" style="color: #f25f43;"></i>$150,000</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="carousel-item">
+                         <img src="./assect/img/home-3-05.jpg" class="d-block w-100" alt="..."><br>
+                        <h5><a href="#">Open Amateur Championship</a></h5>
+                        <p><i class="fa-solid fa-calendar-week" style="color: #f25f43;"></i>September 12-15</p>
+                        <p><i class="fa-solid fa-user" style="color: #f25f43;"></i>25 Participants</p>
+                        <p><i class="fa-solid fa-trophy" style="color: #f25f43;"></i>$150,000</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+        </div>
+        <button class="but">VIEW ALL TOURNAMENTS</button>
+    </section>
+
+    <!-- Moblie Web Championship End -->
+
+    <!-- Awavd Start -->
+
+    <section class="py-5">
+        <div class="row m-0">
+            <div class="col-lg-6 col-sm-12 bg-blue-color">
+                <div class="awavd p-5">
+                    <h2>A Few Words About Our Club</h2>
+                    <br>
+                    <p>We were established in 1990 with a
+                    belief that in a safe environment
+                     fight arts can be an effective and
+                    fun platform for overall fitness and health.</p>
+                    <p>With that in mind, Boxing Day brought together
+                     the best fight and fitness instructors in the industry – from
+                    Boxing to Muay Thai, Jiu Jitsu, MMA etc. It was done with the
+                    goal to create a unique and exhilarating training program.</p>
+                    <div class="experience d-flex justify-content-center text-center">
+                        <div class="year p-3">
+                            <h5>26</h5>
+                            <p><b>YEARS OF <br> EXPERIENCE</b></p>
+                        </div>
+                        <div class="year p-3">
+                            <h5>18</h5>
+                            <p><b>ANNUAL<br>TOURNAMENTS</b></p>
+                        </div>
+                        <div class="year p-3">
+                            <h5>26</h5>
+                            <p><b>QUALIFIED<br> INSTRUCTORS</b></p>
+                        </div>
+                    </div>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 bg-orange-color">
+                <div class="awavd p-5">
+                    <h2>Boxing Benefits</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="parent d-flex">
+                            <div class="child p-2">
+                                <img src="./assect/img/icon-09.jpg" alt="" width="100%">
+                            </div>
+                            <div class="child p-2">
+                                <h6>URN FAT/
+                                    <br> INCREASED <br>
+                                    MUSCLE TONE</h6>
+                            </div>
+                            </div>
+                            <p class="p-2">One of the major benefits of boxing is that it can burn as much as 500 Cal...</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="parent d-flex">
+                            <div class="child p-2">
+                                <img src="./assect/img/icon-10.jpg" alt="" width="100%">
+                            </div>
+                            <div class="child p-2">
+                                <h6>FULL BODY
+                                    WORKOUT</h6>
+                            </div>
+                            </div>
+                            <p class="p-2">Boxing involves the movement of many body parts such as legs and hips...</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="parent d-flex">
+                            <div class="child p-2">
+                                <img src="./assect/img/icon-11.jpg" alt="" width="100%">
+                            </div>
+                            <div class="child p-2">
+                                <h6>STRESS RELIEF <br> AND <br>
+                                    IMPROVED CONFIDENC</h6>
+                            </div>
+                            </div>
+                            <p class="p-2">Boxing will not only help you get in shape, but it will also improve your confidence...</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="parent d-flex">
+                            <div class="child p-2">
+                                <img src="./assect/img/icon-12.jpg" alt="" width="100%">
+                            </div>
+                            <div class="child p-2">
+                                <h6>BUILD STRONG
+                                    BONES</h6>
+                            </div>
+                            </div>
+                            <p class="p-2">Boxing involves a lot of resistance from both the equipment and your bone structure...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awavd End -->
+
+    <!-- Fither Start -->
+
+    <section class="bg-black p-4 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class="container-fluit">
+            <div class="row m-0  head">
+                <h1 class="white-color text-center">The Pros & Cons About Boxing</h1>
+                <div class="col-lg-4 col-sm-12 py-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./assect/img/home-3-07.jpg" alt="Avatar" width="100%" height="100%">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="top">
+                                     <h6 class=""><a href="#">Build a Healthy, Fit Body</a></h6>
+                                    <p>Training in boxing can transform your body. Several
+                                    elements of a standard boxing workout, including running,
+                                    jumping rope, hitting the...</p>
+                                    <button>Learn More</button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 py-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./assect/img/home-3-08.jpg" alt="Avatar" width="100%" height="100%">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="top">
+                                     <h6 class=""><a href="#">Punch Away the Stress</a></h6>
+                                    <p>Beyond the manyphysical benefits of boxing, it's impossible
+                                         to discount the emotional perks of this form of exercise.
+                                          As with many forms of...</p>
+                                    <button>Learn More</button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 py-5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./assect/img/home-3-09.jpg" alt="Avatar" width="100%" height="100%">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="top">
+                                     <h6 class=""><a href="#">Prepare for Bumps and Bruises</a></h6>
+                                    <p>A solo boxing workout can improve your health, but once you add
+                                         contact drills such as sparring to your gym visits, you
+                                          increase your...</p>
+                                    <button>Learn More</button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fither End -->
+
+     <!-- Fither Team Start -->
+
+    <section class="d-block d-sm-block d-md-block d-lg-none d-xl-none bg-black p-5 text-center">
+        <h6 class="text-center white-color h6">The Pros & Cons About Boxing</h6><br>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assect/img/home-3-06.jpg" class="d-block w-100" alt="...">
+                        <div class="fither"><br>
+                            <h6><a href="#">Build a Healthy, Fit Body</a></h6>
+                            <p>Training in boxing can transform your body.
+                            Several elements of a standard boxing workout,
+                            including running, jumping rope, hitting the...</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assect/img/home-3-07.jpg" class="d-block w-100" alt="...">
+                        <div class="fither"><br>
+                            <h6><a href="#">Punch Away the Stress</a></h6>
+                            <p>Beyond the manyphysical benefits of boxing,
+                            it's impossible to discount the emotional
+                            perks of this form of exercise. As with many forms of...</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assect/img/home-3-08.jpg" class="d-block w-100" alt="...">
+                        <div class="fither"><br>
+                            <h6><a href="#">Prepare for Bumps and Bruises</a></h6>
+                            <p>A solo boxing workout can improve your health,
+                            but once you add contact drills such as sparrin
+                             to your gym visits, you increase your...</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <button class="but">VIEW MORE INFO</button>
+    </section>
+
+    <!-- Fither Team End -->
+
+    <!-- Team Start -->
+
+    <section class="bg-blue-color p-5">
+        <div class="h1 p-1">
+            <h1 >Our Team</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-lg-6 col-sm-12 m-0">
+                    <div class="row m-1">
+                    <div class="col-lg-6 col-sm-12 bg-white p-2">
+                            <div class="team p-2">
+                                <img src="./assect/img/home-3-09.jpg" alt="" width="100%">
+                            </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 bg-white p-2">
+                        <div class="team p-2">
+                            <h4>Mark Johnson</h4>
+                            <h6>COACH</h6>
+                            <p><span><i class="fa-solid fa-phone"></i><a href="">1-800-1234-567</a></span></p>
+                            <p>Mark is the owner & founder of Boxing 
+                                Day Club and he has over 15 years of experience..</p>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-youtube"></i><br><br>
+                                <button>GET IN TOUCH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row m-1">
+                    <div class="col-lg-6 col-sm-12 bg-white p-2 ">
+                            <div class="team p-2">
+                                <img src="./assect/img/home-3-10.jpg" alt="" width="100%">
+                            </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 bg-white p-2">
+                        <div class="team p-2">
+                            <h4>Adrian Bradshaw</h4>
+                            <h6>INSTRUCTOR</h6>
+                            <p><span><i class="fa-solid fa-phone"></i><a href="">1-800-1234-567</a></span></p>
+                            <p>Adrian comes with qualifications,
+                                 but more importantly 10 plus years experience to back...</p>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-youtube"></i><br><br>
+                                <button>GET IN TOUCH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-btn d-flex align-items-center justify-content-center py-3">
+                <button>View All Team</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Team End -->
+
+    <!-- Testimonials Start -->
+
+    <section class="bg-lightblack-color p-2 py-5 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class="h1 p-1">
+            <h1 >Testimonials</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-lg-4 col-sm-12">
+                        <div class="testimonail d-flex align-items-center p-5">
+                            <div class="quate p-1">
+                                <img src="./assect/img/home-3-11.jpg" alt="" width="100%">
+                            </div>
+                              <div class="quate p-1">
+                                    <h6>George Barrett</h6>
+                                    <p><span>Club member</span></p>
+                            </div>
+                        </div>
+                        <div class="boxed pt-0 p-5">
+                            <p>
+                                <q>I achieve more results in the hour I spend with Mark
+                                than if I spent all week at my local gym.
+                                I have more fun, better results and ultimately,
+                                greater fitness all because of the dedication he puts into me.</q>
+                            </p>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                        <div class="testimonail d-flex align-items-center p-5">
+                            <div class="quate p-1">
+                                <img src="./assect/img/home-3-12.jpg" alt="" width="100%">
+                            </div>
+                              <div class="quate p-1">
+                                    <h6>Carl Smith</h6>
+                                    <p><span>Club member</span></p>
+                            </div>
+                        </div>
+                        <div class="boxed pt-0 p-5">
+                            <p>
+                                <q>The personal training sessions I’ve been doing at the
+                                club are amazing. The feeling you get from the club can’t
+                                be described in anything less than in a highly positive
+                                manner.</q>
+                            </p>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                        <div class="testimonail d-flex align-items-center p-5">
+                            <div class="quate p-1">
+                                <img src="./assect/img/home-3-13.jpg" alt="" width="100%">
+                            </div>
+                              <div class="quate p-1">
+                                    <h6>Alice Davidson</h6>
+                                    <p><span>Club member</span></p>
+                            </div>
+                        </div>
+                        <div class="boxed pt-0 p-5">
+                            <p>
+                                <q>I used to believe that Boxing as a guy’s sport. I couldn’t
+                                have been more wrong. It’s a brilliant way to stay in shape.
+                                I can’t thank you enough for training and support you’ve
+                                given me.</q>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials End -->
+
+    <!-- Moblie Testimonials Start  -->
+
+    <section class="d-block d-sm-block d-md-block d-lg-none d-xl-none bg-black p-5 pb-3 text-center">
+        <h6 class="text-center white-color h6">Testimonials</h6><br>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonail d-flex align-items-center p-5">
+                            <div class="quate p-1">
+                                <img src="./assect/img/home-3-11.jpg" alt="" width="70%">
+                            </div>
+                              <div class="quate p-1">
+                                    <h6>George Barrett</h6>
+                                    <p><span>Club member</span></p>
+                            </div>
+                        </div>
+                        <div class="boxed pt-0 p-2">
+                            <p>
+                                <q>I achieve more results in the hour I spend with Mark
+                                than if I spent all week at my local gym.
+                                I have more fun, better results and ultimately,
+                                greater fitness all because of the dedication he puts into me.</q>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonail d-flex align-items-center p-5">
+                            <div class="quate p-1">
+                                <img src="./assect/img/home-3-12.jpg" alt="" width="70%">
+                            </div>
+                              <div class="quate p-1">
+                                    <h6>Carl Smith</h6>
+                                    <p><span>Club member</span></p>
+                            </div>
+                        </div>
+                        <div class="boxed pt-0 p-2">
+                            <p>
+                                <q>The personal training sessions I’ve been doing at the
+                                club are amazing. The feeling you get from the club can’t
+                                be described in anything less than in a highly positive
+                                manner.</q>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonail d-flex align-items-center p-5">
+                            <div class="quate p-1">
+                                <img src="./assect/img/home-3-13.jpg" alt="" width="70%">
+                            </div>
+                              <div class="quate p-1">
+                                    <h6>Alice Davidson</h6>
+                                    <p><span>Club member</span></p>
+                            </div>
+                        </div>
+                        <div class="boxed pt-0 p-2">
+                            <p>
+                                <q>I used to believe that Boxing as a guy’s sport. I couldn’t
+                                have been more wrong. It’s a brilliant way to stay in shape.
+                                I can’t thank you enough for training and support you’ve
+                                given me.</q>
+                            </p>
+                        </div>
+                    </div>
+                </div>             
+        </div>
+    </section>
+
+    <!-- Moblie Testimonials End  -->
+
+    <!-- Footer Start -->
+
+    <section class="p-3 bg-black">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-lg-2 col-sm-12">
+                    <div class="footer">
+                        <h6>CONTACT INFORMATION</h6>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-6">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="col-lg-10 col-sm-6">
+                                <p class="gray"><a href="#">2130 Fulton Street San 
+                                    Diego, CA 94117-1080 USA</a></p>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="col-lg-10 col-sm-6">
+                                <p class="gray"><a href="#">1-800-1234-567</a></p>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="col-lg-10 col-sm-6">
+                                <p class="hover"><a href="#">info@demolink.org</a></p>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="col-lg-10 col-sm-6">
+                                <p>Mon: Closed
+                                    Thu–Fri: 11:00am – 8:00pm Sat–Sun: 8:00am – 10:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <div class="footer">
+                        <h6>RECENT BLOG POSTS</h6>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <img src="./assect/img/home-3-14.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-lg-8 col-sm-6">
+                                <p class="italic">2 days ago</p>
+                                <p class="orange"><a href="#">Hand.Wrapping Tutorial from Our Coaches</a></p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <img src="./assect/img/home-3-15.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-lg-8 col-sm-6">
+                                <p class="italic">2 days ago</p>
+                                <p class="orange"><a href="#">Back To School BoxingWorkout: PerfectTraining for.your.Children</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <div class="footer">
+                        <h6>SOCIALS</h6>
+                        <p class="white"><i class="fa-brands fa-facebook-f"></i> <a href="#">Facebook</a></p>
+                        <p class="white"><i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a></p>
+                        <p class="white"><i class="fa-brands fa-google"></i> <a href="#">Google</a></p>
+                        <p class="white"><i class="fa-brands fa-youtube"></i> <a href="#">Youtube</a></p>
+                        <p class="white"><i class="fa-brands fa-instagram"></i > <a href="#">Instagram</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <div class="footer">
+                        <h6>QUICK LINKS</h6>
+                        <p class="orange"><i class="fa-solid fa-chevron-up fa-rotate-90"></i> <a href="#">About</a></p>
+                        <p class="orange"><i class="fa-solid fa-chevron-up fa-rotate-90"></i> <a href="#">Schedule</a></p>
+                        <p class="orange"><i class="fa-solid fa-chevron-up fa-rotate-90"></i> <a href="#">Prices</a></p>
+                        <p class="orange"><i class="fa-solid fa-chevron-up fa-rotate-90"></i> <a href="#">Events</a></p>
+                        <p class="orange"><i class="fa-solid fa-chevron-up fa-rotate-90"></i> <a href="#">Blog</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <div class="footer">
+                        <h6>TWITTER FEED</h6>
+                        <p class="white"><i class="fa-brands fa-twitter"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer End -->
+
+    <!-- Copy Right -->
+
+    <section class="bg-lightblack-color p-2">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="copyright">
+                        <p>© 2023 All Rights Reserved Terms of Use and <a href="#">Privacy Policy</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copy Right -->
+    
+
+
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+   <script>
+        
+        // Navbar Sticky Start
+
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("nbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+        // Navbar Sticky End
+
+        </script>
+   
+    <!-- Navbar Responsive JS Start -->
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+
+<!-- Navbar Responsive JS End -->
+
+ <!-- Dropdown Link Js Start -->
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+        <!-- Dropdown Link Js End -->
+
+       
+
+</body>
+</html>

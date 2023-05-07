@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap');
+
+// font-family: 'Damion', cursive;
+// font-family: 'Oswald', sans-serif;
+
+
+.bg{background-color: black;}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue-color{color: #0f1c33;}
+.white-color{color: white;}
+.orange-color{color: #f25f43;}
+.bg-blue-color{background-color: #0f1c33;}
+.bg-orange-color{background-color: #f25f43;}
+.bg-black-color{background-color: black;}
+.bg-lightblack-color{background-color: #1b1b1b;}
+
+// Top Navbar Start
+
+.topnavbar{
+    background-color: black;
+    padding: 1px;
+    color: white;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding-top: 17px;
+    i{
+        color: #b7b7b7;
+        padding-right: 10px;
+        font-size: 24px;
+    }
+    i:hover{
+        color: #b7b7b7;
+    }
+    a{
+        text-decoration: none;
+        color: white; 
+    }
+    a:hover{
+        text-decoration: underline;
+        color: #f25f43;
+    }
+}
+
+// Top Navbar End
+
+// Logo & Search Start
+
+.search  img{
+        width: 200px;
+    }
+
+.search-icon {
+    border: 1px solid;
+    padding: 10px;
+    
+    input{
+        width: 360px;
+        outline: none;
+        border: none;
+    }
+    input::placeholder{
+        color: #b7b7b7;
+        font-style: italic;
+    }
+}
+
+    i{
+        color: black;
+    }
+    i:hover{
+        color: #f25f43;
+        transition: all 0.5s ease-in-out;
+    }
+
+// Logo & Search End
+
+// Navbar Start
+#nbar{
+    z-index: 99;
+}
+.navber{
+    z-index: 100;
+    .active{
+        color: #f25f43;
+    }
+    li{
+        font-size: 17px;    
+        padding: 10px 30px;
+        list-style: none;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        z-index: 100;
+      }
+      a:hover{
+        color: #f25f43;
+      }
+  .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 100;
+        padding: 5px;
+    }
+   a {
+        float: none;
+        color: black;
+        line-height: 1px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+  .pages{
+        width: 650%;
+        margin-left: -500px;
+    
+  }
+    h6{
+        border-bottom: 1px solid;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+// Navbar End
+
+// MoblieNavbar Start 
+
+ @media (max-width:600px) {
+
+
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      padding: 13px;
+    }
+  
+    .nav > .nav-links {
+      position: absolute;
+      line-height: 20px;
+      display: block;
+      width: 60%;
+      background-color: white;
+      padding: 0px 10px;
+      
+      border-radius: 5px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 68px;
+      left: 120px;
+    }
+    .icons i{
+        color: #f25f43;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+    .icons a{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .icons a:hover{
+        color:  #f25f43;
+        text-decoration: underline;
+    }
+    .icons .active a{
+        color:  #f25f43;
+    }
+    .icons .active a:hover{
+        text-decoration: underline;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - auto);
+    
+    }
+    .dis{
+        gap: 10px;
+        padding: 5px;
+        position: fixed;
+    }
+    .nav {
+        height: 60px;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        z-index: 99;
+        position: fixed;
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        
+        padding: 5px;
+      }
+      .nav > #nav-check {
+        display: none;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+        line-height: 10px;
+      }
+      
+      .sidenav a:hover {
+        color: #f25f43;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+    .fa-bars{
+        background-color:  #f25f43;
+        color: white;
+        padding: 10px;
+    }
+    .fa-caret-down{
+        float: right;
+      }
+      .dropdown-container {
+        display: none;
+        padding-left: 8px;
+        line-height: 10px;
+      }
+      .dropdown-container a{
+        font-size: 15px;
+      }
+      .iconss{
+        width: 240px;
+        padding: 5px;
+        margin-left: 6px;
+        background-color: #b7b7b7;
+      }
+      .input input{
+        border: none;
+        outline: none;
+        padding-left: 5px;
+        background-color: transparent;
+      }
+      .input input::placeholder{
+        color: #9d9d9d;
+        font-style: italic;
+      }
+      .input i{
+        padding-left: 22px;
+        color: #9d9d9d;
+      }
+      .input i:hover{
+        color:  #f25f43;
+      }
+
+      // Moblie Web Banner start
+
+    .bg-img .formgroup {
+        position: relative !important;
+        top: 10% !important;
+        left: 0% !important;
+        transform: none !important;
+        background-image: url("../img/moble-banner.png");
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+ 
+    }
+
+      .hellow{
+        width: 100%;
+      }
+     
+      .banner{
+        padding: 20px !important;
+        h3{
+            font-size: 38px !important;
+            padding-top: 40px;
+        }
+        button{
+            margin-top: 10px;
+        }
+        h5{
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            font-size: 38px;
+        }
+        .form{
+            padding-top: 20px;
+            border-left: none !important;
+            select{
+                width: 100%;
+            }
+        }
+      }
+
+     // Moblie Web Banner End
+
+     //  Moblie Web Championship Start
+     
+     .carousel-item{
+            font-family: "Roboto", Helvetica, Arial, sans-serif; 
+         a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+         }
+         a:hover{
+            color: #f25f43;
+            text-decoration: underline;
+         }
+         p{
+            color: #b7b7b7;
+            font-size: 18px;
+         }
+         i{
+            padding-right: 5px;
+         }
+         button{
+            background-color: transparent;
+            outline: none;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+         }
+         button:hover{
+            color: black;
+            background-color: white;
+            transition: 0.5s ease-in-out;
+         }
+        }
+        .h6{
+           font-family: 'Oswald', sans-serif;
+           font-size: 25px;
+        }
+        .but{
+            background-color: #f25f43;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 5px 10px;
+            font-family: 'Oswald', sans-serif;
+            margin-top: 50px;
+            .but:hover{
+                background-color: #db4437;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    
+    //  Moblie Web Championship End
+
+    // Moblie Awavd Start
+
+    .awavd{
+        h2{
+            font-size: 24px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        a{
+            margin-left: 71px !important;
+        }
+    }
+
+    // Moblie Awavd End
+
+    // Moblie Fither Team Start
+
+    .fither{
+        a{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+    // Moblie Fither Team Start
+
+    // Moblie Testimonials Start
+
+    .quate{
+        h6{
+            font-size: 17px !important;
+        }
+        span{
+            font-size: 16px !important;
+        }
+    }
+    .boxed{
+     q{
+         font-size: 13px !important;
+         padding: 20px !important;
+     }
+    }
+
+    // Moblie Testimonials End
+
+    }
+    
+    // Moblie Fither Team Start
+
+    .carousel-dark .carousel-indicators [data-bs-target] {
+     background-color: white;
+    }
+
+    // Moblie Fither Team End
+
+    // Moblie Awavd Start
+
+    .carousel-indicators {
+                position: absolute;
+                top: 103%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                margin-right: 15%;
+                margin-bottom: 1rem;
+                margin-left: 15%;
+        }
+
+    // Moblie Awavd End
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    
+    // /* Moblie Navbar End
+// Banner start
+
+.bg-img{
+    background-image: url("../img/bg\ 1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    
+    .formgroup{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    .banner{
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    h3{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 60px;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+    }
+    button{
+        padding: 10px 30px;
+        color: white;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid white;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s ease-in-out;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding: 10px;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
+    select{
+        width: 40%;
+        margin-right: 38px;
+        height: 40px;
+        border: none;
+        outline: none;
+    }
+ 
+    .input{
+        width: 50%;
+    }
+    .button{
+        width: 100%;
+        background-color: #f25f43;
+        color: white;
+        border: none;
+    }
+    .button:hover{
+        background-color: #ef3f1d;
+        transition: 0.5s ease-in-out;
+        color: white;
+    }
+    .form{
+        border-left: 2px solid white;
+    }
+}
+
+// Banner End
+
+// Championship Start
+
+.h1{
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    h5{
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: "Roboto", Helvetica, Arial, sans-serif; 
+    }
+    a:hover{
+        color: #f25f43;
+        text-decoration: underline;
+    }
+    i{
+        font-size: 20px;
+        padding-right: 10px;
+        text-align: left;
+    }
+    p{
+        font-size: 20px;
+        text-align: left;
+        padding-top: 10px;
+        font-weight: 100;
+    }
+    .href{
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 15px;
+        padding: 10px 20px;
+        text-align: left;
+        margin-right: 61px;
+    }
+    .href:hover{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        transition: 0.5s ease-in-out;
+    }
+    .all{
+        font-size: 15px;
+        background-color: #f25f43;
+        padding: 10px 20px;
+    }
+    .all:hover{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+// Championship End
+
+// Awavd Start
+
+.awavd{
+    color: white;
+    h2{
+        font-family: 'Oswald', sans-serif;
+        font-size: 47px;
+    }
+    p{
+        font-size: 17.5px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif; 
+    }
+    h5{
+        font-size: 42px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif; 
+    }
+    h6{
+        font-size: 19px;
+        font-family: 'Oswald', sans-serif;
+    }
+    a{
+        color: white;
+        background-color: #f25f43;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: #ef3f1d;
+        transition: 0.5s ease-in-out;
+
+    }
+    .experience{
+        flex-wrap: wrap;
+    }
+}
+
+// Awavd End
+
+// Fither Start
+
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+.top {
+    top: 40%;
+    position: absolute;
+    transform: translate(0, -70px);
+    line-height: 30px;
+    a{
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      color: #ef3f1d;
+      font-size: 30px;
+    }
+    a:hover{
+      color: black;
+      transition: 0.5s ease-in-out;
+    }
+    p{
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+    }
+    button{
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      border: none;
+      outline: none;
+      padding: 5px 20px;
+      color: white;
+      background-color: #ef3f1d;
+    }
+    button:hover{
+        background-color: #ef3f1d;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+// Fither End
+
+// Team Start
+
+.team{
+    line-height: 20px;
+    h4{
+        color: #f25f43;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: "Roboto", Helvetica, Arial, sans-serif; 
+    }
+    h4:hover{
+        color: black;
+        transition: 0.5s ease-in-out;
+    }
+    h6{
+        color: #b7b7b7;
+        font-size: 22px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .fa-phone{
+        color: black;
+        padding-right: 5px;
+        font-size: 20px;
+        padding-top: 13px;
+    }
+    a{
+        color: #b7b7b7;
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 13px;
+    }
+    a:hover{
+        color: #f25f43;
+        text-decoration: underline;
+    }
+    p{
+        color: #b7b7b7;
+        font-size: 15px;
+    }
+    i{
+        padding: 5px;
+    }
+    .fa-facebook-f{
+        background-color: #9d9d9d;
+        color: white;
+        border-radius: 50%;
+        padding: 11px 15px;
+        cursor: pointer;
+    }
+    .fa-facebook-f:hover{
+        background-color: #3b5998;
+        transition: 0.3s ease-in-out;
+    }
+    .fa-twitter{
+        background-color: #9d9d9d;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fa-twitter:hover{
+        background-color: #00bbf2;
+        transition: 0.3s ease-in-out;
+    }
+    .fa-google{
+        background-color: #9d9d9d;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fa-google:hover{
+        background-color: #db4437;
+        transition: 0.3s ease-in-out;
+    }
+    .fa-youtube{
+        background-color: #9d9d9d;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fa-youtube:hover{
+        background-color: #cc181e;
+        transition: 0.3s ease-in-out;
+    }
+    button{
+        background-color: #f25f43;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+    }
+    button:hover{
+        background-color: #ef3f1d;
+        transition: 0.5s ease-in-out;
+    }
+}
+    .team-btn{
+        button{
+        text-align: center;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+// Team End
+
+// Testimonials Start
+
+.quate{
+    line-height: 10px;
+    img{
+        border-radius: 50%;
+    }
+    h6{
+        color: #f25f43;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+    }
+    span{
+        color: #9d9d9d;
+        font-style: italic;
+    }
+   
+
+}
+.boxed q{
+    position: relative;
+    background-color: #333;
+    display: block;
+    border: 1px solid #333;
+    color: white;
+    font-style: italic;
+    padding: 20px;
+    font-size: 16px;
+}
+.boxed q::before{
+    position: absolute;
+    transform: rotate(45deg);
+    top: -10px;
+    left: 30px;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    background-color: #333;
+}
+@media (min-width: 768px){
+    .boxed q::after{
+        content: '\f10d';
+    }
+}
+.boxed q:after{
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    transform: rotate(180deg);
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 36px;
+    color: #686868;
+    line-height: 1;
+    font-style: normal;
+}
+// Testimonials End
+
+// Footer Start
+
+.footer{
+    h6{
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        padding-bottom: 20px;
+        color: white;
+        padding-top: 30px;
+    }
+    .gray{
+        a{
+            font-family: "Roboto", Helvetica, Arial, sans-serif; 
+            text-decoration: none;
+            color: #686868;
+        }
+        a:hover{
+            color: #ef3f1d;
+        }
+    }
+    .hover{
+        a{
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            color: #ef3f1d;
+        }
+        a:hover{
+            color: #db4437;
+        }
+    }
+    p{
+        color: #686868;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+    }
+    .italic{
+            font-style: italic;
+    }
+    .orange{
+        a{
+            text-decoration: none;
+            color: #ef3f1d;
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+        }
+        a:hover{
+            color: white;
+        }
+    }
+    .white{
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+        }
+        a:hover{
+            color: #ef3f1d;
+        }
+    }
+    i{
+        color: white;
+        padding-right: 5px;
+    }
+    .fa-chevron-up{
+        color: #9d9d9d;
+    }
+}
+
+// Footer End
+
+// Copy Right
+
+.copyright{
+    p{
+        font-family: "Roboto", Helvetica, Arial, sans-serif; 
+        color: #686868;
+    }
+    a{
+        text-decoration: none;
+        color: #686868;
+    }
+    a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+// Copy Right
